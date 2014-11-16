@@ -14,7 +14,7 @@ class DurationTestCase: XCTestCase {
     
     func testAgo() {
         let oneDayMinus = NSDate() - 1.day
-        XCTAssertEqualWithAccuracy(duration.ago.timeIntervalSince1970, oneDayMinus.timeIntervalSince1970, 0.05, "")
+        XCTAssertEqualWithAccuracy(duration.ago.timeIntervalSince1970, oneDayMinus.timeIntervalSince1970, 0.01, "")
     }
     
     func testLater() {
