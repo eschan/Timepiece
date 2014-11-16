@@ -25,12 +25,12 @@ class NSDateTestCase: XCTestCase {
     
     func testPlus() {
         let tomorrow = calendar.dateByAddingUnit(.CalendarUnitDay, value: 1, toDate: now, options: .SearchBackwards)
-        XCTAssertEqual(now + 1.day, tomorrow, "")
+        XCTAssertEqual(now + 1.day, tomorrow!, "")
     }
     
     func testMinus() {
         let yesterday = calendar.dateByAddingUnit(.CalendarUnitDay, value: -1, toDate: now, options: .SearchBackwards)
-        XCTAssertEqual(now - 1.day, yesterday, "")
+        XCTAssertEqual(now - 1.day, yesterday!, "")
     }
     
     func testYear() {
